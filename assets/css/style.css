@@ -827,6 +827,27 @@ button, a { transition: var(--transition); }
   color: var(--white);
 }
 
+.property-list {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.property-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.property-list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.property-list::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
 
 
 
@@ -1648,4 +1669,89 @@ button, a { transition: var(--transition); }
 
   .footer-link-box { flex-basis: 700px; }
 
+}
+
+.video-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-video {
+  width: 100%;
+  display: block;
+}
+
+.contact-form {
+  padding-block: var(--section-padding);
+  background: var(--cultured-2);
+}
+
+.contact-form .container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-2);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form-group label {
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  margin-bottom: 8px;
+  color: var(--dark-jungle-green);
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  padding: 10px 15px;
+  font-size: var(--fs-5);
+  border: 1px solid var(--cultured-1);
+  border-radius: 4px;
+  outline: none;
+  transition: var(--transition);
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  border-color: var(--orange-soda);
+  box-shadow: 0 0 5px var(--orange-soda);
+}
+
+.contact-form .form-group textarea {
+  resize: none;
+}
+
+.contact-form .btn {
+  align-self: center;
+  padding: 10px 30px;
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  background: var(--orange-soda);
+  color: var(--white);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.contact-form .btn:hover {
+  background: var(--dark-jungle-green);
+  color: var(--white);
 }

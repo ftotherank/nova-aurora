@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Nova Aurora</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('./header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+  <!-- Header -->
+  <header class="header" data-header>
+    <!-- ...existing header content... -->
+  </header>
+
+  <main>
+    <article>
+      <!-- Hero Section -->
+      <section class="hero" id="about-hero">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle">
+              <ion-icon name="information-circle-outline"></ion-icon>
+              <span>About Nova Aurora</span>
+            </p>
+            <h2 class="h1 hero-title">Discover Our Vision</h2>
+            <p class="hero-text">
+              Nova Aurora is more than a neighborhood; it's a movement towards a sustainable, inclusive, and innovative future. Learn about our journey and what makes us unique.
+            </p>
+          </div>
+          <figure class="hero-banner">
+            <img src="./assets/images/blog-2.webp" alt="About Nova Aurora" class="w-100">
+          </figure>
+        </div>
+      </section>
+
+      <!-- Video Section -->
+<section class="video-section" id="about-video">
+    <div class="container">
+      <h2 class="h1 section-title">Experience Nova Aurora</h2>
+      <p class="section-text">Watch our video to learn more about the vision and lifestyle of Nova Aurora.</p>
+      
+      <div class="video-wrapper">
+        <video class="about-video" controls playsinline>
+          <source src="./assets/images/Nova-Aurora-Video.mp4" type="video/mp4">
+          <source src="./assets/images/Nova-Aurora-Video.mp4" type="video/MP4">
+          <p>Video not found or unsupported. Please check the file path and format.</p>
+        </video>
+      </div>
+    </div>
+  </section>
+
+      <!-- About Section -->
+      <section class="about" id="about-details">
+        <div class="container">
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner-1.jpg" alt="Community Living">
+            <img src="./assets/images/about-banner-2.jpeg" alt="Sustainable Living" class="abs-img">
+          </figure>
+          <div class="about-content">
+            <p class="section-subtitle">Who We Are</p>
+            <h2 class="h2 section-title">Building a Sustainable Future</h2>
+            <p class="about-text">
+              Nova Aurora is a pioneering net-zero neighborhood designed to redefine urban living. Our mission is to create a community that thrives on sustainability, inclusivity, and innovation.
+            </p>
+            <ul class="about-list">
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">Eco-Friendly Infrastructure</p>
+              </li>
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="people-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">Inclusive Community</p>
+              </li>
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="flash-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">Smart Energy Solutions</p>
+              </li>
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">Wellness-Oriented Design</p>
+              </li>
+            </ul>
+            <a href="service.html" class="btn">Explore Our Services</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call-to-Action Section -->
+      <section class="cta">
+        <div class="container">
+          <div class="cta-card">
+            <div class="card-content">
+              <h2 class="h2 card-title">Join Our Community</h2>
+              <p class="card-text">Be part of a neighborhood that values sustainability, innovation, and inclusivity. Discover your dream lifestyle at Nova Aurora.</p>
+            </div>
+            <button class="btn cta-btn">
+              <span>Get Started</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- ...existing footer content... -->
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

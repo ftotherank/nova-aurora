@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties - Nova Aurora</title>
+  <link rel="shortcut icon=" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('./header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <article>
+      <!-- Hero Section -->
+      <section class="hero" id="property-hero">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle">
+              <ion-icon name="business-outline"></ion-icon>
+              <span>Our Properties</span>
+            </p>
+            <h2 class="h1 hero-title">Find Your Dream Property</h2>
+            <p class="hero-text">
+              Explore our wide range of properties designed to meet your needs and preferences.
+            </p>
+          </div>
+          <figure class="hero-banner">
+            <img src="./assets/images/10.webp" alt="Property Hero" class="w-100">
+          </figure>
+        </div>
+      </section>
+
+      <!-- Property Listings Section -->
+      <section class="properties" id="properties">
+        <div class="container">
+          <h2 class="h2 section-title">Available Properties</h2>
+          <ul class="property-list has-scrollbar">
+            <li>
+              <div class="property-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/11.jpg" alt="Property 1" class="w-100">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Modern Apartments</h3>
+                  <p class="card-text">Affordable and energy-efficient apartments with smart home features.</p>
+                </div>
+              </div>
+            </li>
+            <!-- Add more property cards as needed -->
+
+            <li>
+              <div class="property-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/13.webp" alt="Property 2" class="w-100">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Retirement Homes</h3>
+                  <p class="card-text">A peaceful neighbourhood where you can retire in peace and get taken care of.</p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/12.webp" alt="Property 3" class="w-100">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Commercial Spaces</h3>
+                  <p class="card-text">Modern and versatile commercial spaces for your business needs.</p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- Call-to-Action Section -->
+      <section class="cta">
+        <div class="container">
+          <div class="cta-card">
+            <div class="card-content">
+              <h2 class="h2 card-title">Ready to Move In?</h2>
+              <p class="card-text">Contact us to schedule a visit or learn more about our properties.</p>
+            </div>
+            <button class="btn cta-btn">
+              <span>Contact Us</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <!-- ...existing footer content... -->
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

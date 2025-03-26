@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Nova Aurora</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('./header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <article>
+      <!-- Hero Section -->
+      <section class="hero" id="service-hero">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle">
+              <ion-icon name="construct-outline"></ion-icon>
+              <span>Our Services</span>
+            </p>
+            <h2 class="h1 hero-title">What We Offer</h2>
+            <p class="hero-text">
+              Explore the wide range of services we provide to make Nova Aurora a perfect place to live and work.
+            </p>
+          </div>
+          <figure class="hero-banner">
+            <img src="./assets/images/9.webp" alt="Service Hero" class="w-100">
+          </figure>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="h2 section-title">Our Key Services</h2>
+          <ul class="service-list">
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">Smart Homes</h3>
+                <p class="card-text">Experience the convenience of smart living with our energy-efficient homes.</p>
+              </div>
+            </li>
+            <!-- Add more service cards as needed -->
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="business-outline"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">Commercial Spaces</h3>
+                <p class="card-text">Find the perfect space for your business with our modern commercial properties.</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+                <h3 class="h3 card-title">Green Spaces</h3>
+                <p class="card-text">Enjoy the beauty of nature with our lush green spaces and parks.</p>
+              </div>
+            </li>
+          </ul>
+        </div>        
+      </section>
+
+      <!-- Call-to-Action Section -->
+      <section class="cta">
+        <div class="container">
+          <div class="cta-card">
+            <div class="card-content">
+              <h2 class="h2 card-title">Interested in Our Services?</h2>
+              <p class="card-text">Contact us to learn more about how we can help you.</p>
+            </div>
+            <button class="btn cta-btn">
+              <span>Contact Us</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <!-- ...existing footer content... -->
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
