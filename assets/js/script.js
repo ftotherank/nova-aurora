@@ -1,5 +1,7 @@
 'use strict';
 
+import 'ionicons';
+
 /**
  * element toggle function
  */
